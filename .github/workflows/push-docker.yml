@@ -53,6 +53,6 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64
           push: true
-          tags: ${{ vars.DOCKER_IMAGE_TAG || 'kostyaesmukov/smtp_to_telegram:latest' }}
+          tags: ${{ vars.DOCKER_IMAGE_TAG || 'deniom3/smtp_to_telegram:latest' }}
           build-args: |
             ST_VERSION=${{ steps.git_version.outputs.ST_VERSION }}
